@@ -8,4 +8,3 @@ pandas==2.2.3
 openpyxl==3.1.5
 requests==2.32.3
 msal==1.30.0
-python-base64==1.0.1  # Optional, but safe to include
