@@ -13,7 +13,7 @@ from langchain_core.messages import SystemMessage
 
 # ========== CONFIGURATION ==========
 # PASTE YOUR MICROSOFT EXCEL ONLINE SHARE LINK HERE
-EXCEL_SHARE_LINK = "https://your-share-link-here"  # ← REPLACE THIS!
+EXCEL_SHARE_LINK = "https://aayursolutions.sharepoint.com/:x:/r/sites/healthcareoperations/_layouts/15/Doc.aspx?sourcedoc=%7B34765B3E-BB02-42E3-874B-D33CD2B4C312%7D&file=Denial_Code_Library_Template%201.xlsx&action=default&mobileredirect=true"  # ← REPLACE THIS!
 
 CACHE_TTL = 3600  # Refresh every hour
 
