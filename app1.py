@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 import requests
 from io import BytesIO
-import base64
 from datetime import datetime
 
-from langchain_ollama import ChatOllama # Changed import from langchain_community.chat_models
+# THIS IS THE CORRECT IMPORT THAT WORKS ON STREAMLIT CLOUD
+from langchain_community.chat_models import ChatOllama
+
 from langchain_core.tools import tool
-from langchain_experimental.utilities import PythonREPL
 from langgraph.prebuilt import create_react_agent
 from langchain_core.messages import SystemMessage
 
