@@ -168,6 +168,18 @@ if prompt := st.chat_input("Ask: 'CO-50', 'list codes', 'appeals', etc."):
             response = result["messages"][-1].content
         st.markdown(response)
 
-    st.session_state.messages.append({"role": "assistant", "content": response))
+    # st.session_state.messages.append({"role": "assistant", "content": response))
+if prompt := st.chat_input("Ask: 'CO-50', 'list codes', 'appeals', etc."):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            result = agent.invoke({"messages": [("user", prompt)]})
+            response = result["messages"][-1].content
+        st.markdown(response)
+
+    st.session_state.messages.append({"role": "assistant", "content": response})
 
 st.caption("Built with Streamlit • LangGraph • Ollama Llama3.1")
