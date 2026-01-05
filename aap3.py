@@ -9,7 +9,7 @@ import json  # For potential data handling
 DEEPSEEK_API_KEY = "sk-42ec3644fd1f4fcab6b84b40b9424cb0"
 
 # SharePoint direct download URL (fix sharing as noted)
-SHAREPOINT_URL = "https://aayursolutions.sharepoint.com/:x:/s/healthcareoperations/IQA-W3Y0ArvjQodL0zzStMMSAXL_eV3lw2vv9nG9Kt4qRBQ?e=FnjGzr&download=1"
+SHAREPOINT_URL = "https://aayursolutions.sharepoint.com/:x:/r/sites/healthcareoperations/_layouts/15/Doc.aspx?sourcedoc=%7B34765B3E-BB02-42E3-874B-D33CD2B4C312%7D&file=Denial_Code_Library_Template%201.xlsx&action=default&mobileredirect=true"
 
 # Initialize DeepSeek client
 client = OpenAI(
