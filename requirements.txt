@@ -8,3 +8,4 @@ langchain
 langchain-google-genai
 langchain-community
 chromadb
+langchain.text_splitter
